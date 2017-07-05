@@ -1,0 +1,210 @@
+#header {
+	color: $white;
+	background: #563424;
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	@include media("<v-widest") {
+		height: auto;
+	}
+	@include media("<tablet") {
+		padding: 60px 0 0;
+		background: #043355;
+	}
+	.text-holder {
+		position: absolute;
+		display: table;
+		width: 100%;
+		height: 100%;
+		top: 35px;
+		@include media("<v-widest") {
+			top: 40%;
+		}
+		@include media("<tablet") {
+			top: 46%;
+		}
+		.title-wrap {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+	h1 {
+		max-width: 520px;
+		margin: 0 auto;
+		&:after {
+			background: $white;
+		}
+		@include media("<tablet") {
+			max-width: 90%;
+		}
+	}
+	.banner-btn-down {
+		position: absolute;
+		color: $white;
+		bottom: 82px;
+		left: 50%;
+		text-align: center;
+		padding: 12px 0 0;
+		border: 1px solid $white;
+		height: 51px;
+		width: 51px;
+		transform: translate(-50%, 0);
+		transition: background 0.5s ease-out, padding 0.5s ease-out;
+		&:hover {
+			text-decoration: none;
+			background: $blue;
+			padding: 16px 0 0;
+			@include media("<tablet") {
+				padding: 5px 0 0;
+			}
+		}
+		@include media("<large") {
+			bottom: 39px;
+		}
+		@include media("<tablet") {
+			width: 38px;
+			height: 38px;
+			padding: 5px 0 0;
+			font-size: 22px;
+		}
+		i {
+			font-size: 24px;
+		}
+		span {
+			display: none;
+		}
+	}
+	.banner-btn {
+		font-size: 18px;
+		line-height: 20px;
+		position: absolute;
+		bottom: 42px;
+		right: 40px;
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			text-decoration: none;
+			opacity: 0.8;
+		}
+		@include media("<tablet") {
+			display: none;
+		}
+		.icon-pause {
+			vertical-align: sub;
+			font-size: 26px;
+		}
+	}
+}
+.logo {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	z-index: 1;
+	@include media("<tablet") {
+		top: 21px;
+		left: 58px;
+		width: 90px;
+	}
+	@include media("print") {
+		position: static;
+	}
+	a {
+		@include media("print") {
+			display: none;
+		}
+	}
+	.print-logo {
+		display: none;
+		@include media("print") {
+			display: block !important;
+		}
+	}
+	img {
+		width: 173px;
+	}
+}
+.header-banner {
+	@include media("<tablet") {
+		height: 375px;
+	}
+	@include media("print") {
+		display: none;
+	}
+}
+.main-menu {
+	position: absolute;
+	top: 37px;
+	right: 56px;
+	z-index: 100;
+	@include media("<large") {
+		right: 10px;
+	}
+	@include media("<tablet") {
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		margin: 0;
+	}
+	@include media("print") {
+		display: none;
+	}
+	ul {
+		@extend %listreset;
+	}
+	li {
+		display: inline-block;
+		margin: 0 0 0 49px;
+		padding: 0 0 10px;
+		border-bottom: 1px solid transparent;
+		transition: border 0.4s ease;
+		&:hover {
+			border-bottom: 1px solid $white;
+			@include media("<tablet") {
+				border-bottom: none;
+			}
+		}
+		@include media("<wide") {
+			margin: 0 0 0 20px;
+		}
+		@include media("<large") {
+			margin: 0 0 0 15px;
+		}
+		@include media("<tablet") {
+			display: block;
+			background: #fff;
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+	}
+	a {
+		font-size: 18px;
+		line-height: 20px;
+		padding: 0 0 10px;
+		color: $white;
+		z-index: 100;
+		&:hover {
+			text-decoration: none;
+			@include media("<tablet") {
+				background: #043355;
+				color: #fff;
+			}
+		}
+		@include media("<large") {
+			font-size: 16px;
+			line-height: 18px;
+		}
+		@include media("<tablet") {
+			display: block;
+			color: $blue;
+			padding: 10px;
+		}
+	}
+}
+.header-banner {
+	img {
+		width: 100%;
+	}
+}

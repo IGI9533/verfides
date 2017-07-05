@@ -1,0 +1,25 @@
+.register {
+	padding: 78px 0 80px;
+	background: $blue;
+	text-align: center;
+	@include media("<tablet") {
+		padding: 36px 0 42px;
+	}
+	@include media("print") {
+		display: none;
+	}
+	.container {
+		max-width: 735px;
+	}
+	.description {
+		color: $white;
+		padding: 0;
+		margin: 0 0 38px;
+		@include media("<tablet") {
+			margin: 0 0 16px;
+		}
+	}
+	legend {
+		display: none;
+	}
+}

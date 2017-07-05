@@ -1,0 +1,89 @@
+body { 
+	margin: 0;
+	color: $base-text-color;
+	background: $base-background-color;
+	font: #{$base-font-size}/#{$base-line-height} $base-font-family;
+	min-width: $base-min-width;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	@include media("<tablet") {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	@include media("print") {
+		font-size: 13px;
+		line-height: 15px;
+	}
+}
+a {
+	color: $base-link-color;
+}
+h1 {
+	position: relative;
+	padding: 0 0 33px;
+	margin: 0 0 35px;
+	font-size: 36px;
+	line-height: 45px;
+	font-style: italic;
+	font-weight: 300;
+	text-align: center;
+	&:after {
+		content:'';
+		display:block;
+		position: absolute;
+		height: 1px;
+		width: 250px;
+		background: $blue-light;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		@include media("<tablet") {
+			width: 126px;
+		}
+		@include media("print") {
+			display: none;
+		}
+	}
+	@include media("<large") {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	@include media("<tablet") {
+		font-size: 23px;
+		line-height: 31px;
+		padding: 0 0 12px;
+		margin: 0 0 16px;
+	}
+	@include media("print") {
+		padding: 0;
+		margin: 0 0 5px;
+	}
+}
+p {
+	margin: 0 0 20px;
+	@include media("<tablet") {
+		margin: 0 0 10px;
+	}
+}
+.container {
+	max-width: 996px;
+	margin: 0 auto;
+	@extend %clearfix;
+	@include media("<large") {
+		padding: 0 30px;
+	}
+}
+.accessibility{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+.accessibility:focus{
+	position:static;
+	width:auto;
+	height:auto;
+}

@@ -1,0 +1,43 @@
+$white: #fff;
+$blue: #1a3255;
+$blue-light: #769eca;
+$grey: #787878;
+
+$base-text-color: $grey;
+$light-text-color: $white;
+$base-background-color: $white;
+$blue-background-color: $blue;
+
+$base-link-color: $blue;
+$base-form-text-color: $white;
+$base-form-placeholder-color: #abb1bb;
+$base-input-background-color: #2a4061;
+$base-button-bg: $blue;
+$base-button-color: $white;
+
+$base-font-family: "Open Sans", "Tahoma", sans-serif;
+$base-font-size: 14px;
+$base-line-height: 20px;
+
+$base-min-width: 320px;
+
+$breakpoints: (
+  xs-phone: 320px,
+  phone: 670px,
+  tablet: 768px,
+  large: 1024px,
+  wide: 1260px,
+  widest: 1450px,
+  v-widest: 1640px
+);
+
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+

@@ -1,0 +1,42 @@
+// clearfix
+%clearfix {
+  &:after, &:before {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+// reset for list
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content};
+  &::-moz-placeholder {opacity: 1; @content};
+  &:-moz-placeholder {@content};
+  &:-ms-input-placeholder {@content};
+  &.placeholder {@content};
+}
+
+// headunderline
+@mixin headunderline {
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+    margin-left: -$head-underline-width/2;
+    display: block;
+    width: $head-underline-width;
+    height: 1px;
+    background: #769eca;
+  }
+  &.white:after {
+    background: #fff;
+  }
+}

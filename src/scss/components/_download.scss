@@ -1,0 +1,64 @@
+.download-block {
+	max-width: 673px;
+	margin: 0 auto;
+	@extend %clearfix;
+	@include media("print") {
+		max-width: 996px;
+	}
+	a {
+		font-weight: bold;
+		@include media("print") {
+			display: none;
+		}
+	}
+	.description {
+		padding: 0;
+		margin: 0 0 37px;
+		@include media("<tablet") {
+			margin: 0 0 16px;
+		}
+	}
+	.item-holder {
+		text-align: center;
+		@include media("print") {
+			margin: 0 0 250px;
+		}
+	}
+	.item {
+		padding: 0 4%;
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		@include media("<tablet") {
+			display: block;
+			margin: 0 0 15px;
+		}
+		@include media("print") {
+			width: 50%;
+			float: left;
+			padding: 0;
+		}
+		span {
+			display: block;
+			font-size: 18px;
+			line-height: 22px;
+			margin: 0 0 5px;
+			@include media("<tablet") {
+				font-size: 14px;
+				line-height: 18px;
+				margin: 0;
+			}
+		}
+	}
+	.download-image {
+		width: 166px;
+		height: 235px;
+		overflow: hidden;
+		margin: 0 auto 14px;
+		@include media("<tablet") {
+			width: 84px;
+			height: 119px;
+			margin-bottom: 6px;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+.resources-holder {
+	padding: 69px 0 54px;
+	@include media("<tablet") {
+		padding: 33px 0 25px;
+	}
+}
+.resources {
+	margin: 0 0 53px;
+	padding: 0 13px;
+	text-align: center;
+	@include media("<tablet") {
+		padding: 0;
+		margin: 0 0 36px;
+	}
+	.text-item-holder {
+		margin: 0 0 35px;
+		padding: 21px 0 0;
+		@include media("<tablet") {
+			padding: 5px 0 0;
+			margin: 0 0 12px;
+		}
+	}
+	.text-item {
+		width: 48%;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		margin: 0 3% 0 0;
+		&:last-child {
+			margin: 0;
+		}
+		@include media("<tablet") {
+			width: 100%;
+			margin: 0 0 5px;
+			padding: 0 0 5px;
+			border-bottom: 1px solid #eaeaea;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		@include media("print") {
+			border: none;
+			width: 100%;
+			margin: 0 0 15px;
+		}
+		h2 {
+			color: #1a3255;
+			font-size: 18px;
+			font-weight: normal;
+			margin: 0 0 5px;
+			@include media("<tablet") {
+				font-size: 14px;
+				margin: 0;
+			}
+		}
+		p {
+			margin: 0 0 10px;
+			@include media("<tablet") {
+				margin: 0;
+			}
+			@include media("print") {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+	}
+	.more {
+		font-weight: bold;
+		@include media("print") {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?4lw8nj');
+    src:    url('../fonts/icomoon.eot?4lw8nj#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?4lw8nj') format('truetype'),
+        url('../fonts/icomoon.woff?4lw8nj') format('woff'),
+        url('../fonts/icomoon.svg?4lw8nj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down-thin:before {
+    content: "\e900";
+}
+.icon-arrow-right:before {
+    content: "\e600";
+}
+.icon-pause:before {
+    content: "\e601";
+}
+.icon-play:before {
+    content: "\e602";
+}
+.icon-arrow-left:before {
+    content: "\e603";
+}
+.icon-arrow-down:before {
+    content: "\e604";
+}
+.icon-key:before {
+    content: "\e605";
+}
+.icon-mail:before {
+    content: "\e606";
+}
+.icon-long-arrow-down:before {
+    content: "\e607";
+}
+.icon-linkedin:before {
+    content: "\e608";
+}
+.icon-chevron-right:before {
+    content: "\e609";
+}
+.icon-chevron-left:before {
+    content: "\e60a";
+}
+.icon-balance:before {
+    content: "\e60b";
+}
+.icon-time:before {
+    content: "\e60c";
+}
+.icon-puzzle:before {
+    content: "\e60d";
+}
+

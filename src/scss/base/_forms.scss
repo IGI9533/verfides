@@ -1,0 +1,63 @@
+input {
+	font-family: $base-font-family;
+	width: 100%;
+	height: 50px;
+	background: #2a4061;
+	border: none;
+	color: $white;
+	padding: 0 14px;
+	margin: 0 0 17px;
+	@include media("<tablet") {
+		height: 38px;
+		padding: 0 7px;
+	}
+}
+::-webkit-input-placeholder {color:$base-form-placeholder-color; font-weight: bold; font-size: 14px;}
+::-moz-placeholder          {color:$base-form-placeholder-color; font-weight: bold; font-size: 14px;}
+:-moz-placeholder           {color:$base-form-placeholder-color; font-weight: bold; font-size: 14px;}
+:-ms-input-placeholder      {color:$base-form-placeholder-color; font-weight: bold; font-size: 14px;}
+textarea {
+	font-family: $base-font-family;
+	background: $base-input-background-color;
+	border: none;
+	padding: 18px;
+	width: 100%;
+	color: #fff;
+	margin: 0 0 17px;
+	height: 184px;
+	@include media("<tablet") {
+		padding: 7px;
+	}
+}
+legend {
+	display: block;
+	color: #abb1bb;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.form-column {
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+	margin: 0 0 0 3%;
+	&:first-child {
+		margin: 0;
+	}
+	@include media("<tablet") {
+		width: 100%;
+		margin: 0;
+	}
+}
+.column-wrap {
+	@extend %clearfix;
+	margin: 0 0 23px;
+	@include media("<tablet") {
+		margin: 0 0 7px;
+	}
+}
+@media (max-width: 767px) {
+	::-webkit-input-placeholder {font-size: 12px;}
+	::-moz-placeholder          {font-size: 12px;}
+	:-moz-placeholder           {font-size: 12px;}
+	:-ms-input-placeholder      {font-size: 12px;}
+}

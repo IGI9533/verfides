@@ -1,0 +1,130 @@
+.management {
+	padding-bottom: 78px;
+	text-align: center;
+	@include media("<tablet") {
+		padding-bottom: 40px;
+	}
+	.management-wrap {
+		@extend %clearfix;
+		padding: 25px 0 0;
+		margin: 0 0 36px;
+		text-align: center;
+		@include media("<tablet") {
+			padding: 15px 0 0;
+			margin: 0 0 15px;
+		}
+		.contacts {
+			@include media("print") {
+				display: none;
+			}
+		}
+	}
+	.item {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 6.1% 0 0;
+		text-align: center;
+		max-width: 180px;
+		&:last-child {
+			margin: 0;
+		}
+		@include media("<large") {
+			margin: 0 5% 0 0;
+			max-width: 140px;
+		}
+		@include media("<tablet") {
+			margin: 0 2% 0 0;
+		}
+		@include media("<phone") {
+			width: 50%;
+			margin: 0 0 35px;
+			max-width: none;
+		}
+		@include media("print") {
+			width: 50%;
+			margin: 0 0 15px;
+			max-width: none;
+		}
+		.name {
+			font-size: 18px;
+			line-height: 20px;
+			display: block;
+			@include media("<tablet") {
+				font-size: 14px;
+				line-height: 16px;
+			}
+			span {
+				display: block;
+				font-size: 14px;
+				line-height: 17px;
+				@include media("<tablet") {
+					font-size: 12px;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+	.photo-holder {
+		width: 180px;
+		height: 180px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin: 0 auto 22px;
+		@include media("<large") {
+			width: 140px;
+			height: 140px;
+		}
+		@include media("<phone") {
+			width: 91px;
+			height: 91px;
+			margin: 0 auto 5px;
+		}
+	}
+	.contacts {
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.icon-linkedin {
+			font-size: 18px;
+			color: #1d8cb5;
+			margin: 0 8px 0 0;
+			&:hover {
+				color: $blue;
+			}
+			@include media("<phone") {
+				font-size: 14px;
+				margin: 0 5px 0 0;
+				vertical-align: middle;
+			}
+			span {
+				display: none;
+			}
+		}
+		.icon-mail {
+			font-size: 24px;
+			line-height: 26px;
+			&:hover {
+				opacity: 0.7;
+			}
+			&:before {
+				vertical-align: middle;
+			}
+			@include media("<phone") {
+				font-size: 18px;
+				line-height: 20px;
+				vertical-align: text-bottom;
+			}
+			span {
+				font: bold 14px/16px $base-font-family;
+				font-size: 14px;
+				padding: 0 0 0 10px;
+				vertical-align: middle;
+				@include media("<phone") {
+					display: none;
+				}
+			}
+		}
+	}
+}

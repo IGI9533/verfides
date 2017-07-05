@@ -1,0 +1,137 @@
+.page-content {
+	padding: 66px 0 95px;
+	@include media("<tablet") {
+		padding: 30px 0 25px;
+	}
+	@include media("print") {
+		padding: 10px 0 !important;
+	}
+	.description {
+		text-align: center;
+		font-size: 18px;
+		line-height: 22px;
+		margin: 0 auto 31px;
+		padding: 0 15px;
+		max-width: 720px;
+		@include media("<tablet") {
+			font-size: 15px;
+			line-height: 17px;
+			padding: 0;
+			margin: 0 0 10px;
+		}
+		@include media("print") {
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+}
+.welcome {
+	border-bottom: 1px solid  #a5a5a5;
+	@include media("print") {
+		border-bottom: none;
+	}
+	.text-item {
+		columns: 2;
+		column-gap: 28px;
+		padding: 0 15px;
+		@include media("<tablet") {
+			columns: 1;
+			padding: 0;
+		}
+		@include media("print") {
+			columns: 1;
+			padding: 0;
+		}
+	}
+}
+.services {
+	padding: 88px 0 76px;
+	@include media("<tablet") {
+		padding: 29px 0 15px;
+	}
+	@include media("print") {
+		padding: 10px 0;
+	}
+}
+.img-section {
+	padding: 0;
+	background: url("../images/bg-section.jpg") no-repeat 50% 0/cover;
+	height: 300px;
+	@include media("<tablet") {
+		background: url("../images/bg-section-mobile.jpg") no-repeat 50% 0/cover;
+		height: 150px;
+	}
+	@include media("print") {
+		display: none;
+	}
+}
+.tax {
+	text-align: center;
+	color: $white;
+	background: #1A3255;
+	font-size: 18px;
+	line-height: 20px;
+	background: $blue url("../images/bg-map.png") no-repeat 50% 50%;
+	padding: 70px 0 81px;
+	@include media("<tablet") {
+		padding: 32px 0 42px;
+		font-size: 14px;
+		line-height: 16px;
+		background-size: 150%;
+	}
+	@include media("print") {
+		padding: 0;
+	}
+	h1 {
+		margin: 0 0 26px;
+		@include media("<tablet") {
+			margin: 0 0 18px;
+		}
+	}
+	.btn {
+		margin-top: 33px;
+		@include media("<tablet") {
+			margin-top: 18px;
+		}
+	}
+}
+.questions {
+	background: $blue;
+	color: $white;
+	text-align: center;
+	@include media("print") {
+		display: none;
+	}
+	.container {
+		max-width: 735px;
+	}
+	.description {
+		margin: 0 0 20px;
+	}
+	legend {
+		text-align: left;
+	}
+}
+.bodies {
+	padding-top: 90px;
+	@include media("<tablet") {
+		padding-top: 35px;
+	}
+	.text-item {
+		width: 33%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 20px;
+		@include media("<large") {
+			width: 32%;
+		}
+		@include media("<tablet") {
+			width: 100%;
+			padding: 0;
+		}
+		@include media("print") {
+			width: 100%;
+			padding: 0;
+		}
+	}
+}
